@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="principal">
+
+        <div>
+            <input type="checkbox" class="checkbox" id="chk">
+            <label class="label" for="chk">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <div class="ball"></div>
+            </label>
+        </div>
+
+        <div class="principal-box">
+        <div class="card-box">
+            <div class="img-top">
+            <img src="./images/bored.gif" alt="">
+            <div class="img-overlay">
+                <img src="./images/icon-view.svg" alt="">
+            </div>
+            </div>
+            <h3 class="title">Equilibrium #3429</h3>
+            <p class="sub-title">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="info">
+                <div class="info-eth">
+                   <img src="./images/icon-ethereum.svg" alt="">
+                   <p>0.041 ETH</p>
+                </div>
+                <div class="info-clock">
+                    <img src="./images/icon-clock.svg" alt="">
+                    <p>3 days left</p>
+                </div>
+            </div>
+            <div class="user">
+                <img class="avatar" src="./images/image-avatar.png" alt="">
+                <p>Creation of <span style="color: var(--title-color)">Jules Wyvern</span></p>
+            </div>
+        </div>
+        <div class="card-box">
+            <div class="img-top">
+            <img src="./images/monkey2.gif" alt="">
+            <div class="img-overlay">
+                <img src="./images/icon-view.svg" alt="">
+            </div>
+            </div>
+            <h3 class="title">Equilibrium #3429</h3>
+            <p class="sub-title">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="info">
+                <div class="info-eth">
+                   <img src="./images/icon-ethereum.svg" alt="">
+                   <p>0.071 ETH</p>
+                </div>
+                <div class="info-clock">
+                    <img src="./images/icon-clock.svg" alt="">
+                    <p>4 days left</p>
+                </div>
+            </div>
+            <div class="user">
+                <img class="avatar" src="./images/image-avatar.png" alt="">
+                <p>Creation of <span style="color: var(--title-color)">Gartt Simpsons</span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const chk = document.getElementById('chk')
+        const cardbox = document.getElementById ('card-box')
+        chk.addEventListener('click', ()=> {
+            document.body.classList.toggle('dark')
+        })
+    </script>
+
+    <script src="https://kit.fontawesome.com/9fe3540a2a.js" crossorigin="anonymous"></script>
+</body>
+</html>
